@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  ingest-service:
+    build: ingest-service/
+    depends_on:
+      - rabbitmq
+      - mock-blockchain
+    links:
+      - rabbitmq
+      - mock-blockchain
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    expose:
+    - "5672"
+    ports:
+    - 8080:15672
+
+  mock-blockchain:
+    build: mock-blockchain-swagger-ui/
+    ports:
+    - "8085:8085"
+    expose:
+      - "8085"
