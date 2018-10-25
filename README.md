@@ -1,8 +1,14 @@
 # quickstart
 Quickstart run guide (Tested on UNIX/MAC only)
 
-1. git clone https://github.com/Blockchain-utility-applications/quickstart.git
-2. bash run.sh
+1.
+```
+git clone https://github.com/Blockchain-utility-applications/quickstart.git
+```
+2.
+```
+bash run.sh
+```
 
 run.sh clones the required repos and uses docker-compose to start the network   
 
