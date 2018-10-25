@@ -1,7 +1,7 @@
 # quickstart
 Quickstart run guide (Tested on UNIX/MAC only)
 
-1.
+
 ```
 git clone https://github.com/Blockchain-utility-applications/quickstart.git
 ```
