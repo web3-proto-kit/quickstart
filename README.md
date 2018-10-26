@@ -1,7 +1,7 @@
 # quickstart
 Quickstart run guide (Tested on UNIX/MAC only)
 
-This is a small toy application that serves as an example of some microservice's using rabbitMQ with a mock blockchain network exposed via REST. 
+This is a small toy application that serves as an example of some nodeJS microservice's communicating via rabbitMQ as part of  a mock blockchain network exposed via REST. 
 
 ```
 1. git clone https://github.com/Blockchain-utility-applications/quickstart.git
