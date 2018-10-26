@@ -23,3 +23,12 @@ services:
     - "8085:8085"
     expose:
       - "8085"
+
+  client-message-emitter:
+    build: client-message-emitter-service/
+    expose:
+      - "3030"
+    depends_on:
+      - rabbitmq
+    links:
+      - rabbitmq
