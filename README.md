@@ -13,5 +13,6 @@ run.sh clones the required repos and uses docker-compose to start the network
 Brings you to the rabbitMQ management login screen. Here you can view the rabbit-mq queues/exchanges live data. Username = guest, Password = guest
 
 ## http:/localhost:8000/live 
+(Not finished)
 Brings you to the React/Redux frontend to view the hashed messages live table.
 
