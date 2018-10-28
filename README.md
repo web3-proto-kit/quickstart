@@ -1,7 +1,12 @@
 # Summary
 Quickstart run guide (Tested on UNIX/MAC only)
 
-This is a toy application that should serve as an example of a containerized microservice architecture with a react web client for consumption and presentation of live data. Microservices communicate via RabbitMQ. Client consumes messages via socket.io. 
+This is a toy application that should serve as an example of a containerized microservice architecture with a react web client for consumption and presentation of live data. Microservices communicate via RabbitMQ. Client consumes messages via socket.io.
+
+The ingest-service consumes messasges from our mock-blockchain application. Messages are passed to the NewMessageExchange within our RabbitMQ instance. The client-message-emitter service consumes Messages are emits them via socket.io to any subscribed clients. The react application consumes these messages and presents them in tabular format. 
+
+The application logs all output as objects for descriptive logging. The ELK stack should be used here to view the logs. 
+HTTPS/OAuth needs to be implemented next. 
 
 # Quickstart Run Guide
 Quickstart run guide (Tested on UNIX/MAC only)
