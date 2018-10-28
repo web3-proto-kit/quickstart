@@ -1,10 +1,7 @@
 # Summary
 Quickstart run guide (Tested on UNIX/MAC only)
 
-This is a toy application that should serve as an example of a containerized microservice architecture with a react web client for consumption and presentation of live data. 
-
-Below is a quick summary of the project. 
-
+This is a toy application that should serve as an example of a containerized microservice architecture with a react web client for consumption and presentation of live data. Microservices communicate via RabbitMQ. Client consumes messages via socket.io. 
 
 # Quickstart Run Guide
 Quickstart run guide (Tested on UNIX/MAC only)
@@ -32,3 +29,13 @@ http:localhost:3000/
 Brings you to the react ui. Here you can view a table that lets you view live messages emitted from the client-message-emitter service. The client subscribes to the service via socket io.
 
 ## Next Steps 
+I have recently been attempting to build a automated project that can provide Rapid Scaffolding of a microservices project that closesly resembles a production environment for a PoC that can seamlessly transition into production ready code with minimal modification. 
+
+Below are some steps I would like to take to achieve this:
+
+1. I want to have a standard configuration for logging so that i dont have to waste time evaluating various different tools.
+2. I want to have the ability to set up configuration properties per environment so that I can run multiple environments concurrently
+3. I want to have standard HTTP based framework boilerplates set up that can I use for REST/GraphQL endpoints
+4. I want to have the ability to ensure that my HTTP endpoints are secure by default and white-list those that I deem safe. 
+5. I want to have a boilerplate for a PWA which is configured for SSR, code splitting , Hot Module Reloading.
+6. I want to have a Document Database Container, pre configured for a development setup which my application code has also been setup to connect to so that I can read and write data immediately. 
