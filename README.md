@@ -11,7 +11,7 @@ The application logs all output as objects for descriptive logging. The ELK stac
 Quickstart run guide (Tested on UNIX/MAC only)
 
 ```
-1. git clone https://github.com/Blockchain-utility-applications/quickstart.git
+1. git clone https://github.com/Blockchain-utility-applications/quickstart.git && cd quickstart
 2. npm run start:fresh
 3. optional
    - npm start (doesn't clone required repos)
