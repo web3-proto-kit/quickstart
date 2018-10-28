@@ -1,11 +1,13 @@
 # quickstart
 Quickstart run guide (Tested on UNIX/MAC only)
 
-This is a small toy application that serves as an example of some nodeJS microservice's communicating via rabbitMQ as part of  a mock blockchain network exposed via REST. 
 
 ```
 1. git clone https://github.com/Blockchain-utility-applications/quickstart.git
-2. bash run.sh
+2. npm run start:fresh
+3. optional
+   - npm start (doesn't clone required repos)
+   - npm run clean (removes all cloned repos)
 ```
 
 run.sh clones the required repos and uses docker-compose to start the network   
