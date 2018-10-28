@@ -4,7 +4,7 @@
   "description": "Quickstart run guide (Tested on UNIX/MAC only)",
   "main": "",
   "scripts": {
-    "start:fresh": "clean && bash run.sh",
+    "start:fresh": "npm run clean && bash run.sh",
     "start": "docker-compose build && docker-compose up",
     "clean": "bash clean.sh"
   },

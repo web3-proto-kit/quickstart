@@ -13,29 +13,34 @@ services:
   rabbitmq:
     image: rabbitmq:3-management
     expose:
-    - "5672"
+    - 5672
     ports:
     - 8080:15672
 
   mock-blockchain:
     build: mock-blockchain-swagger-ui/
     ports:
-    - "8085:8085"
+    - 8085:8085
     depends_on:
       - rabbitmq
     expose:
-      - "8085"
+      - 8085
 
   client-message-emitter:
     build: client-message-emitter-service/
     expose:
-      - "3030"
+      - 3030
     ports:
-      - "3030:3030"
+      - 3030:3030
     depends_on:
       - rabbitmq
       - mock-blockchain
       - ingest-service
     links:
       - rabbitmq
+  
+  # ui-table-view:
+  #   build: UI-table-view/
+  #   ports:
+  #     - 3000:3000
   
