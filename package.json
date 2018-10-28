@@ -1,0 +1,21 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "description": "Quickstart run guide (Tested on UNIX/MAC only)",
+  "main": "",
+  "scripts": {
+    "start:fresh": "clean && bash run.sh",
+    "start": "docker-compose build && docker-compose up",
+    "clean": "bash clean.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockchain-utility-applications/quickstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blockchain-utility-applications/quickstart/issues"
+  },
+  "homepage": "https://github.com/Blockchain-utility-applications/quickstart#readme"
+}
