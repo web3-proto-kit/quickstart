@@ -10,6 +10,8 @@ The application logs all output as objects for descriptive logging. The ELK stac
 # Quickstart Run Guide
 Quickstart run guide (Tested on UNIX/MAC only)
 
+Please make sure you have Docker installed.
+
 ```
 1. git clone https://github.com/Blockchain-utility-applications/quickstart.git && cd quickstart
 2. npm run start:fresh
