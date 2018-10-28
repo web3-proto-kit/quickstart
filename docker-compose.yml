@@ -39,8 +39,8 @@ services:
     links:
       - rabbitmq
   
-  # ui-table-view:
-  #   build: UI-table-view/
-  #   ports:
-  #     - 3000:3000
+  ui-table-view:
+    build: ui-table-view/
+    ports:
+      - 3000:3000
   
