@@ -13,8 +13,8 @@ Quickstart run guide (Tested on UNIX/MAC only)
 Please make sure you have Docker installed.
 
 Ensure the following ports on localhost are not in use:
--3000
--8080
+- 3000
+- 8080
 
 ```
 1. git clone https://github.com/Blockchain-utility-applications/quickstart.git && cd quickstart
