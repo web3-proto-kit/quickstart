@@ -18,7 +18,7 @@ services:
     - 8080:15672
 
   mock-blockchain:
-    build: mock-blockchain-swagger-ui/
+    build: message-generator-api/
     ports:
     - 8085:8085
     depends_on:
